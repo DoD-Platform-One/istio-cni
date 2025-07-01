@@ -1,0 +1,5 @@
+# -- Values to pass to [the upstream cni chart](https://github.com/istio/istio/blob/master/manifests/charts/istio-cni/values.yaml)
+# @default -- Upstream chart values
+upstream:
+  ambient:
+    enabled: false

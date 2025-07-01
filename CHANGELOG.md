@@ -4,8 +4,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
-## [0.0.0-bb.0] - YYYY-MM-DD
+## [1.26.1-bb.0]
 
-### Changetype (<https://keepachangelog.com/en/1.0.0/#how>)
+### Added
 
-- Brief description of changes
+- Initial helm chart
