@@ -1,6 +1,6 @@
 apiVersion: v2
 name: istio-cni
-version: 1.26.1-bb.0
+version: 1.26.1-bb.1
 appVersion: 1.26.1
 description: Helm chart for istio-cni components
 icon: https://istio.io/latest/favicons/android-192x192.png
