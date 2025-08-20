@@ -1,3 +1,37 @@
 ########################
 # Required for package #
 ########################
+networkPolicies:
+  enabled: true
+kiali:
+  enabled: true
+  values:
+    bbtests:
+      enabled: false
+kyvernoPolicies:
+  values:
+    bbtests:
+      enabled: false
+kyverno:
+  values:
+    bbtests:
+      enabled: false
+packages:
+  istio-cni:
+    namespace:
+      create: false
+      name: kube-system
+    helmRelease:
+      namespace: bigbang
+    dependsOn:
+      - name: istiod
+        namespace: bigbang
+    enabled: true
+    sourceType: "git"
+    git:
+      repo: https://repo1.dso.mil/big-bang/apps/sandbox/istio-cni.git
+      path: "./chart"
+    values:
+      upstream:
+        global:
+          platform: k3s
