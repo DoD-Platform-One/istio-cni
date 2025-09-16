@@ -1,7 +1,7 @@
 apiVersion: v2
 name: istio-cni
-version: 1.27.0-bb.0
-appVersion: 1.27.0
+version: 1.27.1-bb.0
+appVersion: 1.27.1
 description: Helm chart for istio-cni components
 icon: https://istio.io/latest/favicons/android-192x192.png
 keywords:
@@ -12,16 +12,16 @@ sources:
 dependencies:
   - name: cni
     repository: https://istio-release.storage.googleapis.com/charts
-    version: 1.27.0
+    version: 1.27.1
     alias: upstream
 annotations:
   bigbang.dev/passthrough: "true"
   bigbang.dev/passthrough-toplevel-key: upstream
   bigbang.dev/maintenanceTrack: bb_integrated
   bigbang.dev/applicationVersions: |
-    - Istio: 1.27.0
+    - Istio: 1.27.1
   helm.sh/images: |
     - name: cni
-      image: registry1.dso.mil/ironbank/opensource/istio/install-cni:1.27.0
+      image: registry1.dso.mil/ironbank/opensource/istio/install-cni:1.27.1
   bigbang.dev/upstreamReleaseNotesMarkdown: |
     - [Find upstream chart's release notes and CHANGELOG here](https://istio.io/latest/news/releases)
