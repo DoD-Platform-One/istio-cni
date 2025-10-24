@@ -5,7 +5,7 @@ upstream:
     enabled: false
   global:
     hub: registry1.dso.mil/ironbank/opensource/istio
-    tag: 1.27.2
+    tag: 1.27.3
     imagePullPolicy: "Always"
     imagePullSecrets:
       - private-registry
